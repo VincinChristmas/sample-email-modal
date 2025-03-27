@@ -18,9 +18,20 @@ windows.onload = function() {
         }
     }
 
-    let closeModal = () {
+    let closeModal = () => {
         emailModal.classList.remove("email-modal--visable");
     }
+
+    let addErros = () => {
+        document.getElementsByClassName("email-modal__form-group")[0].classList.add("email-modal__form-group--error");
+        document.getElementsByClassName("email-modal__error-message")[0].classList.add("email-modal__error-message--active");
+    }
+
+    let removeErrors = () => {
+        
+    }
+
+
 
 
 
